@@ -1,0 +1,183 @@
+/*
+ * File name: print.css
+ *
+ * Author: Hassan Ali
+ *
+ * Description: Style sheet for Ultrasis.com which removes all unnecessary elements for printing
+ *
+ * container
+ *   header
+ *   main
+ *     side
+ *     content
+ *   footer
+ *
+ */
+
+/* Hide unwanted elements. */
+#submenu, #print, #printpage, .accessibility,.hide,.navigation,.account,button,.tabs,.Finish,#header h1, #header h2,.calendar,.hidePrint, .squareButtons, form .warning, .multiview, .squaretabs
+{
+	display: none;
+}
+.showPrint{
+	display: block;
+}
+
+/* Start of body style
+----------------------------------------------- */
+body {
+	font-family: sans-serif;
+	font-size: medium;
+	color: black;
+	background-color: white;
+}
+
+/* Start of header styles
+----------------------------------------------- */
+#header h1 a {
+	text-decoration: none;
+	color: #000;
+	/*	font-size: larger; */
+	font-weight: bold;
+	font-size: 0.6em;
+	padding: 0;
+	margin: 0;
+}
+
+/* Start of content styles
+----------------------------------------------- */
+#content {
+	width: 100%;
+	padding: 0;
+}
+
+#content p,#content ul,#content ol,#content form,#content table {
+	padding: 0 0 0.4em 0;
+}
+
+#content h3 {
+	font-size: 1.8em;
+	padding: 0 0 0.2em 0;
+}
+
+.multidata {
+	width: 48% !important;
+	float: left;
+}
+.flash object{
+	width: 320px;
+	height: 128px;
+	
+}
+.multidata table{
+	width: 320px;	
+}
+.showPrint img {
+	width: 320px !important;
+	height: 128px !important;
+}
+
+.newpage{
+	page-break-before: always;	
+}
+#content fieldset {
+	border: none;
+	clear: both;
+	margin-bottom: 0.25em;
+}
+
+#content fieldset legend {
+	color: black;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 0 0 0.2em 0;
+}
+
+#content label {
+	font-weight: bold;
+}
+
+#content fieldset div {
+	padding: 0 0 0.4em 1em;
+}
+
+#content fieldset p {
+	padding: 0 0 0.4em 1em;
+}
+
+#content #problems span {
+	float: left;
+	position: relative;
+}
+
+#content form table {
+	margin: 0 0 0.4em 1em;
+}
+
+#content #problems span.value {
+	float: right;
+	clear: none;
+	position: relative;
+}
+
+#content a {
+	text-decoration: none;
+}
+
+#content table {
+	border-collapse: collapse;
+}
+
+#content table th {
+	text-align: left;
+	border: 1px solid black;
+}
+
+#content table td {
+	border: 1px solid black;
+	padding: 2px 5px 2px 5px;
+}
+
+#content table thead td {
+	border: 0px;
+	padding: 2px 5px 2px 5px;
+	text-align: center;
+}
+p.section {
+	display: block;
+	width: 100%;
+}
+
+p.section.bottom {
+	display: block;
+	width: 100%;	
+	clear: both;
+}
+
+/* Start of footer styles
+----------------------------------------------- */
+#footer {
+	font-size: 0.8em;
+	clear: both;
+}
+
+#footer a {
+	text-decoration: none;
+	color: black;
+	background-color: white;
+}
+
+/* Start of genral styles
+----------------------------------------------- */
+.warning {
+	color: red;
+}
+
+table.plain th {
+	font-weight: normal;
+}
+
+.break {
+	page-break-before: always;
+	clear: left;
+}
