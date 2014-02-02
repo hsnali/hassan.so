@@ -24,10 +24,10 @@ module.exports = function (grunt) {
                 files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
                 tasks: ['compass:server', 'autoprefixer']
             },
-            styles: {
-                files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
-                tasks: ['copy:styles', 'autoprefixer', 'copy:fonts']
-            },
+            // styles: {
+            //     files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
+            //     tasks: ['copy:styles', 'autoprefixer', 'copy:fonts']
+            // },
             livereload: {
                 options: {
                     livereload: '<%= connect.options.livereload %>'
@@ -121,14 +121,15 @@ module.exports = function (grunt) {
                 // httpGeneratedImagesPath: '/images/generated',
                 // httpFontsPath: '/styles/fonts',
                 // relativeAssets: false,
-                outputStyle: 'nested',
-                force: true
+                outputStyle: 'nested'
+                // force: true
                 // assetCacheBuster: true
             },
             dist: {
                 options: {
                     cssDir: '<%= yeoman.dist %>/css',
-                    fontsDir: '<%= yeoman.dist %>/fonts'
+                    // fontsDir: '<%= yeoman.dist %>/fonts',
+                    outputStyle: 'compressed'
                     // generatedImagesDir: '<%= yeoman.dist %>/images/generated'
                 }
             },
@@ -275,12 +276,21 @@ module.exports = function (grunt) {
                     dest: '<%= yeoman.dist %>/fonts/',
                     filter: 'isFile'
                 }]
+            },
+            fonts: {
+                files: [{
+                    expand: true,
+                    flatten: true,
+                    src: ['<%= yeoman.app %>/bower_components/font-awesome/fonts/**'],
+                    dest: '.tmp/fonts/',
+                    filter: 'isFile'
+                }]
             }
         },
         concurrent: {
             server: [
-                'compass',
-                'copy:styles'
+                'compass'
+                // 'copy:styles'
             ],
             test: [
                 'copy:styles'
@@ -344,6 +354,7 @@ module.exports = function (grunt) {
         'rev',
         'usemin'
     ]);
+
     grunt.registerTask('sass', [
         'clean:dist',
         'sass'
