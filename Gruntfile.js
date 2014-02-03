@@ -297,9 +297,9 @@ module.exports = function (grunt) {
             ],
             dist: [
                 // 'compass',
-                'copy:styles',
-                'imagemin',
-                'svgmin',
+                // 'copy:dist',
+                // 'imagemin',
+                // 'svgmin',
                 'htmlmin'
             ]
         }
@@ -336,10 +336,10 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'useminPrepare',
-        'concurrent:dist',
+        // 'concurrent:dist',
         'autoprefixer',
         'concat',
-        // 'cssmin',
+        'htmlmin',
         'compass:dist',
         'uglify',
         'copy:dist',
