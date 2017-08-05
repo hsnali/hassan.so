@@ -2,7 +2,7 @@
   "name": "hassan-so",
   "version": "0.0.0",
   "scripts": {
-    "build": "grunt"
+    "build": "default"
   },
   "dependencies": {},
   "devDependencies": {
