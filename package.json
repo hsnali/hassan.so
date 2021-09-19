@@ -20,6 +20,7 @@
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "postcss": "^8.3.6",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
