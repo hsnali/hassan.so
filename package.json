@@ -1,6 +1,6 @@
 {
-  "name": "hsnso",
-  "version": "0.1.0",
+  "name": "hassan.so",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -26,6 +26,7 @@
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.21.0",
     "tailwindcss": "^2.2.15",
-    "typescript": "^4.4.3"
+    "typescript": "^4.4.3",
+    "typescript-plugin-css-modules": "^3.4.0"
   }
 }
