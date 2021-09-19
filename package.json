@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -21,6 +21,7 @@
     "eslint-config-next": "11.1.2",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "next-images": "^1.8.1",
     "postcss": "^8.3.6",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",

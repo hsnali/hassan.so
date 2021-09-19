@@ -1,6 +1,5 @@
-import Image from "next/image";
-
 import styles from "./Footer.module.scss";
+import logo from "@/assets/vercel.svg";
 
 const Footer = () => (
   <footer className={styles.footer}>
@@ -11,7 +10,7 @@ const Footer = () => (
     >
       Powered by{" "}
       <span className={styles.logo}>
-        <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+        <img src={logo} alt="Vercel Logo" width="72" height="16" />
       </span>
     </a>
   </footer>

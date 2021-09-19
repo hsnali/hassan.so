@@ -28,5 +28,6 @@ module.exports = {
       },
     ],
     "simple-import-sort/exports": "error",
+    "@next/next/no-img-element": "off",
   },
 };
