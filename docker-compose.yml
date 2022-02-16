@@ -1,0 +1,9 @@
+version: '3'
+services:
+  hassan_so:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/home/node/hassan_so
+      - /home/node/hassan_so/node_modules
